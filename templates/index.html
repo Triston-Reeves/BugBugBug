@@ -1,0 +1,11 @@
+<h1>Expand Mens Tua</h1>
+<a href="/addticket/"><button type="button">Add a Ticket!</button></a>
+<a href="/logout/"><button type="button">Logout</button></a>
+<h2>New</h2>
+{% for tick in new_tickets %}
+    <h3>{tick.id}</h3>
+    <h3>{tick.title}</h3>
+    <h3>{tick.assigned_to}</h3>
+    <h3>{tick.filed_by}</h3>
+    <h3>{tick.date}</h3>
+{% endfor %}

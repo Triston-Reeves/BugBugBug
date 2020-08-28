@@ -1,0 +1,9 @@
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if request.path == "/signup/" %}
+    <input type="submit" value="Signup">
+    {% else %}
+    <input type="submit" value="Login">
+{% endif %}
+</form>
